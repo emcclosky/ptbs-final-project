@@ -1,7 +1,7 @@
 (function(){
     angular
       .module('app')
-      .controller('AirfareController', function (DataFactory) {
+      .controller('WelcomeController', function (DataFactory) {
       var vm = this;
   
     });

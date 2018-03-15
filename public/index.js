@@ -6,7 +6,10 @@
             template: '<welcome></welcome>'
           })
           .when('/app', {
-            template: '<task-form></task-form>'
+            template: '<this-or-that></this-or-that>'
+          })
+          .when('airfare', {
+            template: '<airfare></airfare>'
           })
       });
   })();
