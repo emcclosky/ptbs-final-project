@@ -1,5 +1,5 @@
-<div>
-    <a ng-click="setOptions()" ng-href="{{selectedImg.src}}" alt="{{slide.images[0].list}}">{{expression1}}</a>
+<div ng-click="$ctrl.setOptions()" ng-repeat="option in $ctrl.options" >
+    <img ng-src="{{option.img}}"/>{{option.tag}}
 </div>
 
 <!-- 

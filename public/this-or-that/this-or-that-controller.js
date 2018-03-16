@@ -4,6 +4,7 @@
       .controller('ThisOrThatController', function (DataFactory) {
         var vm = this;
         var optIndex = 0;
+        var lists = DataFactory.lists;
         vm.options = lists[optIndex];
 
         //ng -click
@@ -11,7 +12,7 @@
         if (optIndex === 5) {
             $location.path('/airfare');
         }
-        saveOpt();
+        // saveOpt();
         optIndex++;
         vm.options = lists[optIndex];
         }

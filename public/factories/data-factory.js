@@ -13,11 +13,15 @@
                 {name: '', airport: '', tag: [], id: 8, img: ''}
                 ];
 
-        var imgSets = [
-                [{tag: 'city', img: ''}, {tag: 'beach', img: ''}],
-                [{tag: 'secluded', img: ''},{tag: 'crowded', img: ''}],
-                [{tag: 'relax', img: ''},{tag: 'explore', img: ''}],
-                [{tag: 'stay out late', img: ''},{tag: 'stay in', img: ''}]];        
+        var lists = [
+                [{tag: 'city', img: 'http://placehold.it/400X400'}, {tag: 'beach', img: 'http://placehold.it/400X400'}],
+                [{tag: 'secluded', img: 'http://placehold.it/400X400'},{tag: 'crowded', img: 'http://placehold.it/400X400'}],
+                [{tag: 'relax', img: 'http://placehold.it/400X400'},{tag: 'explore', img: 'http://placehold.it/400X400'}],
+                [{tag: 'stay out late', img: 'http://placehold.it/400X400'},{tag: 'stay in', img: 'http://placehold.it/400X400'}]];        
+        return {
+            cities,
+            lists
+        }
 
 
   
