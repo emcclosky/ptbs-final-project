@@ -14,7 +14,7 @@
                 {name: 'Cancun', airport: 'CUN', tag: ['beach', 'isolation', 'lazy', 'party'], id: 8, img: 'https://upload.wikimedia.org/wikipedia/commons/thumb/5/54/Imagebysafa2.jpg/540px-Imagebysafa2.jpg'}
                 ];
 
-        var imgSets = [
+        var lists = [
                 [{tag: 'city', img: 'https://freepresets.com/wp-content/uploads/2016/03/Free-Lightroom-Preset-Vintage-City-After.jpg'}, {tag: 'beach', img: 'https://static.pexels.com/photos/221471/pexels-photo-221471.jpeg'}],
                 [{tag: 'isolation', img: 'http://blog.rismedia.com/wp-content/uploads/2015/10/HorsesForHighways.jpg'},{tag: 'crowded', img: 'https://s3-us-west-1.amazonaws.com/eslinsider-images/images/crowdedshibuyacrossing.png'}],
                 [{tag: 'lazy', img: 'http://www.guidetocaribbean.net/wp-content/uploads/2017/05/beachdrinks7-600x337.jpg'},{tag: 'adventure', img: 'https://upload.wikimedia.org/wikipedia/en/e/eb/Spaceball_jump_over_Skydive_35.jpg'}],
@@ -23,18 +23,18 @@
 
         var finalSelections = [];
         
-        cities.forEach(function(city) {
-          var match = _.intersection(city.tag, userChoices).length;
-          finalSelections.push(Object.assign(city, { match }));
-        });
+        // cities.forEach(function(city) {
+        //   var match = _.intersection(city.tag, userChoices).length;
+        //   finalSelections.push(Object.assign(city, { match }));
+        // });
 
-        finalSelections.sort(function(a, b) {
-          return b.match - a.match;
-        });      
+        // finalSelections.sort(function(a, b) {
+        //   return b.match - a.match;
+        // });      
 
         return {
             cities,
-            imgSets,
+            lists,
             userChoices
         };
 
