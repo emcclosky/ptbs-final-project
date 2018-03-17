@@ -23,20 +23,34 @@
 
         var finalSelections = [];
         
-        // cities.forEach(function(city) {
-        //   var match = _.intersection(city.tag, userChoices).length;
-        //   finalSelections.push(Object.assign(city, { match }));
-        // });
 
-        // finalSelections.sort(function(a, b) {
-        //   return b.match - a.match;
-        // });      
+        function getUserResults(){
+          cities.forEach(function(city) {
+            var match = intersection(city.tag, userChoices).length;
+            finalSelections.push(Object.assign(city, { match }));
+          });
+
+          return finalSelections.sort(function(a, b) {
+            return b.match - a.match;
+          });      
+        }
 
         return {
             cities,
             lists,
             userChoices
         };
+
+
+        function intersection (arr, arr2) {
+          var result = [];
+          for (var item of arr) {
+            if (arr2.includes(item)) {
+              result.push(item);
+            }
+          }
+          return result;
+        }
 
 
       });
