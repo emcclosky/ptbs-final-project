@@ -9,21 +9,22 @@
 
         //ng -click
         vm.setOptions = function(tag){
-        if (optIndex === 5) {
-            $location.path('/airfare');
-        }
-        // saveOpt();
-        optIndex++;
-        vm.options = lists[optIndex];
+            if (optIndex === 5) {
+                $location.path('/airfare');
+            }
+            saveOpt(tag);
+            optIndex++;
+            vm.options = lists[optIndex];
         }
 
         function saveOpt (tag) {
-        DataFactory.options[optIndex] = tag;
+            DataFactory.userSelects.push(tag);
         }
 
-        vm.back = function(){
-        optIndex--;
-        vm.options = lists[optIndex];
+        vm.back = function(tag){
+            optIndex--;
+            vm.options = lists[optIndex];
+            DataFactory.userSelects.pop(tag)
         };
   
     });
