@@ -34,7 +34,7 @@
 
         return {
             cities,
-            lists,
+            imgSets,
             userChoices
         };
 
