@@ -18,13 +18,13 @@
         }
 
         function saveOpt (tag) {
-            DataFactory.userSelects.push(tag);
+            DataFactory.userChoices.push(tag);
         }
 
         vm.back = function(tag){
             optIndex--;
             vm.options = lists[optIndex];
-            DataFactory.userSelects.pop(tag)
+            DataFactory.userChoices.pop(tag)
         };
   
     });
