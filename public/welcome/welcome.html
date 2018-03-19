@@ -1,11 +1,10 @@
 <div class="welcome-container">
     <div class='inner-container'>
       <h1 class='welcome-header'>Choose your airport</h1>
-      <form ng-submit='$ctrl.airport()'>
-        <input type='text' ng-model='$ctrl.' class="inputs" placeholder=" Enter your airport"/>
-        <button class="add-button">Add</button>
+      <form ng-submit='$ctrl.addAirport()'>
+        <input type='text' ng-model='$ctrl.newAirport' class="inputs" placeholder=" Enter your airport"/>
+        <a href="#!/app"><button class="enter-button">ENTER</button></a>
       </form>
-      <a href="#!/app" class="enter-button">ENTER</a>
     </div>  
   </div>
-  
+ 

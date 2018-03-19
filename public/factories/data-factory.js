@@ -38,7 +38,8 @@
         return {
             cities,
             lists,
-            userChoices
+            userChoices,
+            getUserResults
         };
 
 

@@ -8,7 +8,7 @@
           .when('/app', {
             template: '<this-or-that></this-or-that>'
           })
-          .when('airfare', {
+          .when('/airfare', {
             template: '<airfare></airfare>'
           })
       });

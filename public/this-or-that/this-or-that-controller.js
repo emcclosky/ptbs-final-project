@@ -1,7 +1,7 @@
 (function(){
     angular
       .module('app')
-      .controller('ThisOrThatController', function (DataFactory) {
+      .controller('ThisOrThatController', function (DataFactory, $location) {
         var vm = this;
         var optIndex = 0;
         var lists = DataFactory.lists;
@@ -9,8 +9,9 @@
 
         //ng -click
         vm.setOptions = function(tag){
-            if (optIndex === 5) {
+            if (optIndex === 3) {
                 $location.path('/airfare');
+                //change optIndex back to  === 5
             }
             saveOpt(tag);
             optIndex++;
