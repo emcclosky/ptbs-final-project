@@ -3,7 +3,7 @@
     .module('app')
     .controller('AirfareController', function (DataFactory, $http) {
     var vm = this;
-    var finalSelections = DataFactory.finalSelections;
+    var finalSelections = DataFactory.getUserResults();
     var userAirport = DataFactory.userAirport;
     console.log('userAirport', userAirport);
     console.log('finalSelections', finalSelections);
@@ -17,5 +17,3 @@
   });
 })();
 
-
-//http://api.travelpayouts.com/v2/prices/month-matrix?currency=usd&origin=LED&destination=HKT&show_to_affiliates=true&token=PutHereYourToken
