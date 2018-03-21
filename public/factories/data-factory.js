@@ -22,7 +22,6 @@
                 [{tag: 'lazy', img: 'http://www.guidetocaribbean.net/wp-content/uploads/2017/05/beachdrinks7-600x337.jpg'},{tag: 'adventure', img: 'https://upload.wikimedia.org/wikipedia/en/e/eb/Spaceball_jump_over_Skydive_35.jpg'}],
                 [{tag: 'party', img: 'http://themocracy.com/wp-content/uploads/2016/12/Parties.jpg'},{tag: 'sleep', img: 'http://dwgyu36up6iuz.cloudfront.net/heru80fdn/image/upload/c_fill,d_placeholder_self.png,fl_progressive,g_face,h_450,q_80,w_800/v1489376598/self_8-easy-tricks-to-get-better-sleep.jpg'}]];
 
-        
 
         function getUserResults(){
           var finalSelections = [];
@@ -33,7 +32,7 @@
 
           return finalSelections.sort(function(a, b) {
             return b.match - a.match;
-          });      
+          });
         }
 
         return {
