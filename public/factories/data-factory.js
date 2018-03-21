@@ -1,6 +1,8 @@
 (function(){
     angular.module('app')
       .factory('DataFactory', function(){
+        // var userAirport = [];
+        var userAirport;
         var userChoices = [];
 
         var cities = [
@@ -40,7 +42,9 @@
             lists,
             userChoices,
             getUserResults,
-            finalSelections
+            finalSelections,
+            userChoices,
+            userAirport
         };
 
 
