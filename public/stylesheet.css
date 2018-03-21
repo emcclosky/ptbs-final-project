@@ -1,0 +1,14 @@
+#headerLogo {
+	max-width: 400px;
+}
+
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+.appDiv {
+	max-width: 800px;
+}
