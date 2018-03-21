@@ -1,14 +1,13 @@
 (function(){
     angular.module('app')
       .factory('DataFactory', function(){
-        // var userAirport = [];
         var userAirport;
         var userChoices = [];
 
         var cities = [
                 {name: 'Bangkok', airport: 'BKK', tag: ['beach', 'crowded', 'adventure', 'party'], id: 1, img: 'http://static.asiawebdirect.com/m/bangkok/portals/bangkok-com/shared/teasersL/TOURS/discover-bangkok-in-2-days/teaserMultiLarge/imageHilight/bangkok-day-trip.jpg'},
                 {name: 'Reykjavik', airport: 'RKV', tag: ['city', 'isolation', 'adventure', 'sleep'], id: 2, img: 'http://www.whatson.is/wp-content/uploads/2015/12/january-in-reykjavik-iceland.jpg'},
-                {name: 'Milan', airport: 'MXP', tag: ['city', 'crowded', 'lazy', 'sleep'], id: 3, img: 'https://media-cdn.tripadvisor.com/media/photo-s/06/9f/d0/38/the-duomo-s-structure.jpg'},
+                {name: 'Milan', airport: 'MIL', tag: ['city', 'crowded', 'lazy', 'sleep'], id: 3, img: 'https://media-cdn.tripadvisor.com/media/photo-s/06/9f/d0/38/the-duomo-s-structure.jpg'},
                 {name: 'New York City', airport: 'JFK', tag: ['city', 'crowded', 'adventure', 'party'], id: 4, img: 'https://travel.usnews.com/static-travel/images/destinations/44/chrysler_bldg_gety_marian_kilinski.jpg'},
                 {name: 'Havana', airport: 'HAV', tag: ['beach', 'crowded', 'lazy', 'sleep'], id: 5, img: 'https://www.mustdotravels.com/wp-content/uploads/2017/04/Havana.jpg'},
                 {name: 'Dublin', airport: 'DUB', tag: ['city', 'isolation', 'lazy', 'sleep'], id: 6, img: 'http://vacations.aircanada.com/media/images/common/csstorage/dest_slider/Ireland_02.jpg'},
@@ -40,7 +39,6 @@
             lists,
             userChoices,
             getUserResults,
-            finalSelections,
             userChoices,
             userAirport
         };
