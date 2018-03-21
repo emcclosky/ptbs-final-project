@@ -39,7 +39,8 @@
             cities,
             lists,
             userChoices,
-            getUserResults
+            getUserResults,
+            finalSelections
         };
 
 
