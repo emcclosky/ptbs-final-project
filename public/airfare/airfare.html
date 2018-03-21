@@ -1,1 +1,5 @@
 <a href="#!/" class="back-button">Back</a>
+<div ng-repeat="selection in $ctrl.finalSelections | limitTo: 1">
+  <img ng-src="{{selection.img}}" />
+  <h4>{{selection.name}}</h4>
+</div>

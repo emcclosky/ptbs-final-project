@@ -21,10 +21,13 @@
                 [{tag: 'party', img: 'http://themocracy.com/wp-content/uploads/2016/12/Parties.jpg'},{tag: 'sleep', img: 'http://dwgyu36up6iuz.cloudfront.net/heru80fdn/image/upload/c_fill,d_placeholder_self.png,fl_progressive,g_face,h_450,q_80,w_800/v1489376598/self_8-easy-tricks-to-get-better-sleep.jpg'}]];
 
 
-        var finalSelections = [];
-        
+
+
+
+
 
         function getUserResults(){
+          var finalSelections = [];
           cities.forEach(function(city) {
             var match = intersection(city.tag, userChoices).length;
             finalSelections.push(Object.assign(city, { match }));
@@ -32,7 +35,7 @@
 
           return finalSelections.sort(function(a, b) {
             return b.match - a.match;
-          });      
+          });
         }
 
         return {
