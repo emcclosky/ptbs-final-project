@@ -1,5 +1,6 @@
 #headerLogo {
 	max-width: 350px;
+	min-width: 300px;
 	margin-top: 80px;
 }
 
@@ -15,17 +16,83 @@
 }
 
 .welcome-container {
-	display: flex;
 	margin: 0 auto;
-	justify-content: center;
-	background-color: white;
+	background-color: rgba(255,255,255, 0.9);
     width: 300px;
     height: 150px;
     border-radius: 5px;
-    opacity: 0.88;
-    box-shadow: 0px 2px 3px 0px rgba(0,0,0,0.7);
+    box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.7);
     margin-top: 100px;
 }
+
+.inner-container {
+	display: inline-block;
+	text-align: center;
+}
+
+.welcome-header {
+ 	text-align: center;
+	font-family: "Futura", "Arial Bold", Gadget, sans-serif;
+	font-size: 21px;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: 900;
+	line-height: 31px;
+	font-kerning: auto;
+	color: #2470A1;
+	margin-top: 21px;
+	margin-bottom: 0;
+}
+
+.background {
+    /*position: center;*/
+    background-image: url("http://i67.tinypic.com/fy06zo.jpg");
+    background-repeat:no-repeat;
+    background-size:100% 100vh;
+}
+
+.enter-button {
+	color: white;
+	height: 22px;
+	width: 238px;
+	border-radius: 3px;
+	background: #2470A1;
+	margin: 10px;
+}
+
+.enter-button:hover {
+  background: #195277;
+}
+
+#airport-input {
+	height: 20px;
+	width: 230px;
+	margin-top: 15px;
+}
+
+#this-that-outer-container {
+	margin: 0 auto;
+	background-color: rgba(255,255,255, 0.9);
+    width: 300px;
+    height: 150px;
+    border-radius: 5px;
+    box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.7);
+    margin-top: 100px;
+}
+
+#this-or-that {
+	width: 200px;
+	margin-top: 10px;
+}
+
+
+
+
+
+
+
+
+
 
 
 

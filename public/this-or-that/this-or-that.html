@@ -1,6 +1,9 @@
-<button ng-click="$ctrl.back(option.tag)">
-  BACK
-</button>
+
+<div id="this-that-outer-container">
+	<img id="this-or-that" class="center" src="http://i63.tinypic.com/2yukk7n.png">
+	<button ng-click="$ctrl.back(option.tag)">BACK</button>
+</div>
+
 
 <div ng-click="$ctrl.setOptions(option.tag)" ng-repeat="option in $ctrl.options" >
     <img ng-src="{{option.img}}"/>{{option.tag}}
