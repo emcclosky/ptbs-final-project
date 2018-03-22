@@ -7,8 +7,8 @@
       vm.addAirport = function () {
         if(!vm.newAirport){
           return;
-        } else{
-          DataFactory.userAirport = vm.newAirport;
+        } else {
+          DataFactory.setUserAirport(vm.newAirport);
         }
   
         };

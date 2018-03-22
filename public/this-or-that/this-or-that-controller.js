@@ -26,6 +26,9 @@
             optIndex--;
             vm.options = lists[optIndex];
             DataFactory.userChoices.pop(tag)
+            if (optIndex < 0) {
+                $location.path('/');
+            }
         };
   
     });

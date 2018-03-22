@@ -1,4 +1,7 @@
-<div ng-click="$ctrl.setOptions(option.tag)" ng-repeat="option in $ctrl.options" >
-    <img ng-src="{{option.img}}"/>{{option.tag}}
-    <!-- The option.tag will be removed once we make sure everything works -->
+<div class="img-container"></div>
+    <div ng-click="$ctrl.setOptions(option.tag)" ng-repeat="option in $ctrl.options" class="inner-img-div">
+        <img ng-src="{{option.img}}" class="images"/>
+        <!-- The option.tag will be removed once we make sure everything works -->
+    </div>
 </div>
+<button ng-click="$ctrl.back(option.tag)">BACK</button>
