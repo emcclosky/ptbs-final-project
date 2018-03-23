@@ -13,7 +13,7 @@
     <img ng-src="{{option.img}}"/>{{option.tag}}
 ======= -->
 <div class="this-or-that-container">
-    <img  ng-click="$ctrl.setOptions($ctrl.options[0].tag)" ng-src="{{$ctrl.options[0].img}}"/>
+    <img class="grow" ng-click="$ctrl.setOptions($ctrl.options[0].tag)" ng-src="{{$ctrl.options[0].img}}"/>
     <div class="welcome-container">
         <div class="inner-container">
             <h2 class='welcome-header'>This or that?</h2>
@@ -21,7 +21,7 @@
             <button id="this-that-back-button" ng-click="$ctrl.back(option.tag)">GO BACK</button>
         </div>
     </div>
-    <img  ng-click="$ctrl.setOptions($ctrl.options[1].tag)" ng-src="{{$ctrl.options[1].img}}"/>
+    <img class="grow" ng-click="$ctrl.setOptions($ctrl.options[1].tag)" ng-src="{{$ctrl.options[1].img}}"/>
 <!-- >>>>>>> c182f50269dc9d8d2f940ae4d37121daaf28907e -->
     <!-- The option.tag will be removed once we make sure everything works -->
 </div>
