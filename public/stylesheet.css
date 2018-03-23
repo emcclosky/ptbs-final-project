@@ -98,6 +98,20 @@
 	margin-bottom: 0;
 }
 
+.this-or-that-container {
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+	margin-top: 50px;
+}
+
+.this-or-that-container .welcome-container {
+	margin: 0;
+}
+
+.this-or-that-container img {
+	height: 250px;
+}
 
 
 
