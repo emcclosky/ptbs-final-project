@@ -1,8 +1,7 @@
-
 #headerLogo {
-	max-width: 350px;
-	min-width: 300px;
-	margin-top: 80px;
+    max-width: 350px;
+/* -	min-width: 300px; */
+    margin-top: 80px;
 }
 
 .center {
@@ -13,12 +12,12 @@
 }
 
 .appDiv {
-	max-width: 800px;
+    max-width: 800px;
 }
 
 .welcome-container {
-	margin: 0 auto;
-	background-color: rgba(255,255,255, 0.9);
+    margin: 0 auto;
+    background-color: rgba(255,255,255, 0.9);
     width: 300px;
     height: 150px;
     border-radius: 5px;
@@ -29,21 +28,21 @@
 }
 
 .inner-container {
-	text-align: center;
+    text-align: center;
 }
 
 .welcome-header {
- 	text-align: center;
-	font-family: "Futura", "Arial Bold", Gadget, sans-serif;
-	font-size: 21px;
-	font-style: normal;
-	font-variant: normal;
-	font-weight: 900;
-	line-height: 31px;
-	font-kerning: auto;
-	color: #2470A1;
-	margin-top: 21px;
-	margin-bottom: 0;
+     text-align: center;
+    font-family: "Futura", "Arial Bold", Gadget, sans-serif;
+    font-size: 21px;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: 900;
+    line-height: 31px;
+    font-kerning: auto;
+    color: #2470A1;
+    margin-top: 21px;
+    margin-bottom: 0;
 }
 
 .background {
@@ -51,15 +50,17 @@
     background-image: url("http://i67.tinypic.com/fy06zo.jpg");
     background-repeat:no-repeat;
     background-size:100% 100vh;
+    overflow:hidden;
+    text-align:center;
 }
 
 .enter-button {
-	color: white;
-	height: 22px;
-	width: 238px;
-	border-radius: 3px;
-	background: #2470A1;
-	margin: 10px;
+    color: white;
+    height: 22px;
+    width: 238px;
+    border-radius: 3px;
+    background: #2470A1;
+    margin: 10px;
 }
 
 .enter-button:hover {
@@ -67,18 +68,18 @@
 }
 
 #airport-input {
-	height: 20px;
-	width: 230px;
-	margin-top: 15px;
+    height: 20px;
+    width: 230px;
+    margin-top: 15px;
 }
 
 #this-that-back-button {
-	color: white;
-	height: 22px;
-	width: 238px;
-	border-radius: 3px;
-	background: #2470A1;
-	margin: 10px;
+    color: white;
+    height: 22px;
+    width: 238px;
+    border-radius: 3px;
+    background: #2470A1;
+    margin: 10px;
 }
 
 #this-that-back-button:hover {
@@ -86,36 +87,49 @@
 }
 
 #option-question {
-	text-align: center;
-	font-family: "Futura", "Arial Bold", Gadget, sans-serif;
-	font-size: 14px;
-	font-style: normal;
-	font-variant: normal;
-	font-weight: 900;
-	line-height: 31px;
-	font-kerning: auto;
-	color: black;
-	margin-top: 10px;
-	margin-bottom: 0;
+    text-align: center;
+    font-family: "Futura", "Arial Bold", Gadget, sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: 900;
+    line-height: 31px;
+    font-kerning: auto;
+    color: black;
+    margin-top: 10px;
+    margin-bottom: 0;
 }
 
 .this-or-that-container {
-	display: flex;
-	align-items: center;
-	justify-content: space-around;
-	margin-top: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 50px;
 }
 
 .this-or-that-container .welcome-container {
-	margin: 0;
+    margin: 0;
 }
 
 .this-or-that-container img {
-	height: 250px;
+    height: 250px;
+	box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.7);
 }
 
+.grow { 
+	transition: all 200ms ease-in-out; 
+}
 
+.grow:hover { 
+	transform: scale(1.1); 
+}
 
-
-
-
+@media (max-width: 700px) {
+    .this-or-that-container {   
+        flex-direction: column;
+    }
+    #headerLogo {
+		width: 70%;
+		margin-top: 30px;
+	}
+}

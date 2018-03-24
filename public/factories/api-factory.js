@@ -8,7 +8,7 @@
           var destinations = angular.copy(DataFactory.getUserResults()).slice(0, 3);
 
           var promises = [];
-          for (var i = 0; i < destinations.length; i ++){
+          for (var i = 0; i < destinations.length; i++){
             var destination = destinations[i].airport;
             promises.push($http.get(`api/prices/month-matrix?currency=usd&show_to_affiliates=false&origin=${userAirport}&destination=${destination}&month=2018-04-21`))
           }
