@@ -1,10 +1,8 @@
 <a href="#!/" class="back-button">Back</a>
-<div ng-repeat="selection in $ctrl.finalSelections | limitTo: 1">
+<div ng-repeat="selection in $ctrl.finalSelections">
   <img ng-src="{{selection.img}}" />
   <h4>{{selection.name}}</h4>
+  <p>Price: {{selection.price}}</p>
 </div>
-<div>
-    <p>Price: $134.74</p>
-</div>  
 
 

@@ -2,7 +2,15 @@
     angular.module('app')
       .factory('DataFactory', function(){
         var userAirport;
+        function setUserAirport(usrAprt){
+          return userAirport = usrAprt;
+        };
+        function getUserAirport(){
+          return userAirport;
+        };
+        
         var userChoices = [];
+
 
         var cities = [
                 {name: 'Bangkok', airport: 'BKK', tag: ['beach', 'crowded', 'adventure', 'party'], id: 1, img: 'http://static.asiawebdirect.com/m/bangkok/portals/bangkok-com/shared/teasersL/TOURS/discover-bangkok-in-2-days/teaserMultiLarge/imageHilight/bangkok-day-trip.jpg'},
@@ -40,7 +48,8 @@
             userChoices,
             getUserResults,
             userChoices,
-            userAirport
+            setUserAirport,
+            getUserAirport
         };
 
 
