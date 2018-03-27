@@ -1,0 +1,27 @@
+{
+  "name": "final_project",
+  "version": "1.0.0",
+  "description": "",
+  "main": "routes.js",
+  "dependencies": {
+    "express": "^4.16.3",
+    "flights": "file:flights",
+    "request": "^2.85.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/emcclosky/ptbs-final-project.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/emcclosky/ptbs-final-project/issues"
+  },
+  "homepage": "https://github.com/emcclosky/ptbs-final-project#readme"
+}

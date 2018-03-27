@@ -1,0 +1,316 @@
+body {
+	text-align: center;
+}
+
+p {
+    color: white;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+}
+
+ul {
+    color: white;
+    font-family: 'Open Sans', sans-serif;
+    list-style: none;
+}
+
+h4 {
+    color: white;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+    font-size: 25px;
+    margin: 14px 0px 10px 0px;
+}
+
+h5 {
+    color: white;
+    font-family:'Open Sans', sans-serif;
+    font-weight: 600;
+    font-size: 18px;
+    margin: 10px 0px 8px 0px;
+}
+
+#headerLogo {
+    max-width: 350px;
+/* -	min-width: 300px; */
+    margin-top: 80px;
+}
+
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+.appDiv {
+    max-width: 800px;
+}
+
+.welcome-container {
+    margin: 0 auto;
+    background-color: rgba(255,255,255, 0.9);
+    width: 300px;
+    height: 150px;
+    border-radius: 5px;
+    box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.7);
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+}
+
+.inner-container {
+    text-align: center;
+}
+
+.welcome-header {
+     text-align: center;
+    font-family: "Futura", "Arial Bold", Gadget, sans-serif;
+    font-size: 21px;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: 900;
+    line-height: 31px;
+    font-kerning: auto;
+    color: #2470A1;
+    margin-top: 21px;
+    margin-bottom: 0;
+}
+
+.background {
+    /*position: center;*/
+    background-image: url("http://i67.tinypic.com/fy06zo.jpg");
+    background-repeat:no-repeat;
+    background-size:100% 100vh;
+    overflow:hidden;
+    text-align:center;
+}
+
+.enter-button {
+    color: white;
+    height: 22px;
+    width: 238px;
+    border-radius: 3px;
+    background: #2470A1;
+    margin: 10px;
+    border: none;
+}
+
+.enter-button:hover {
+  background: #195277;
+  cursor: pointer;
+}
+
+#airport-input {
+    height: 20px;
+    width: 230px;
+    margin-top: 15px;
+}
+
+#this-that-back-button {
+    color: white;
+    height: 22px;
+    width: 238px;
+    border-radius: 3px;
+    background: #2470A1;
+    margin: 10px;
+    border: none;
+}
+
+#this-that-back-button:hover {
+  background: #195277;
+  cursor: pointer;
+}
+
+#option-question {
+    text-align: center;
+    font-family: "Futura", "Arial Bold", Gadget, sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: 900;
+    line-height: 31px;
+    font-kerning: auto;
+    color: black;
+    margin-top: 10px;
+    margin-bottom: 0;
+}
+
+.this-or-that-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 50px;
+}
+
+.this-or-that-container .welcome-container {
+    margin: 0;
+}
+
+.this-or-that-container img {
+    height: 250px;
+	box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.7);
+}
+
+.grow { 
+	transition: all 200ms ease-in-out; 
+}
+
+.grow:hover { 
+	transform: scale(1.1); 
+}
+
+.activity-text {
+    color: white;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+}
+
+.airfare-backbtn {
+    color: white;
+    height: 22px;
+    width: 238px;
+    border-radius: 3px;
+    background: #2470A1;
+    margin: 20px 10px 25px 10px;
+    border: none;
+    text-transform: uppercase;
+    font-size: 14px;
+}
+
+.airfare-backbtn:hover {
+    background: #195277;
+    cursor: pointer;
+}
+
+.backbtn-link{
+    text-decoration: none;
+    color: white;
+}
+
+.airfare-linkbtn {
+    text-decoration: none;
+    font-family: 'Open Sans', sans-serif;
+    margin-bottom: 30px;
+    font-weight: 600;
+    background-color: #ef7300;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    text-align: center;
+    padding: 10px 10px 10px 10px;
+    font-size: 14px;
+    text-transform: uppercase;
+
+}
+
+/* .result-container {
+    border-top: 1px solid #e5e5e5;
+} */
+
+.airfare-linkbtn:hover{
+    background-color: #c45e00;
+    cursor: pointer;
+}
+
+.airfare-link {
+    color: white;
+    text-decoration: none;
+}
+
+/* Loader Stuffs */
+
+#airplane-loader {
+	margin: 100px;
+}
+#airplane-take-off {
+	transform-origin: bottom center;
+	animation-name: take-off;
+    animation-duration: 2s; 
+	animation-iteration-count: infinite;
+	animation-timing-function: linear;
+}
+@keyframes take-off {
+    0% {
+		opacity: 0;
+		transform: translate(-40px,0) rotate(0deg);
+	}
+	10% {
+		opacity: 1;
+	}
+	25% {
+		transform: translate(0,0) rotate(0deg);
+	}
+	30% {
+		transform: translate(8px,-1px) rotate(-2deg);
+	}
+	35% {
+		transform: translate(16px,-3px) rotate(-4deg);
+	}
+	40% {
+		opacity: 1;
+		transform: translate(24px,-5px) rotate(-7deg);
+	}
+	45% {
+		transform: translate(32px,-8px) rotate(-10deg);
+	}
+    50% {
+		opacity: 0;
+		transform: translate(40px,-12px) rotate(-16deg);
+	}
+    100% {
+		opacity: 0;
+		transform: translate(40px,-12px) rotate(-16deg);
+	}
+}
+
+#airplane-landing {
+	transform-origin: bottom center;
+	animation-name: landing;
+  animation-duration: 2s;
+	animation-iteration-count: infinite;
+	animation-timing-function: linear;
+}
+@keyframes landing {
+    0% {
+		opacity: 0;
+		transform: translate(-40px,-12px) rotate(16deg);
+	}
+	50% {
+		opacity: 0;
+		transform: translate(-40px,-12px) rotate(16deg);
+	}
+	55% {
+		transform: translate(-32px,-8px) rotate(10deg);
+	}
+	60% {
+    transform: translate(-24px,-5px) rotate(7deg);
+	}
+	65% {
+    opacity: 1;
+		transform: translate(-16px,-3px) rotate(4deg);
+	}
+	70% {
+		transform: translate(-8px,-1px) rotate(2deg);
+	}
+	75% {
+		transform: translate(0,0) rotate(0deg);
+	}
+	90% {
+		opacity: 1;
+	}
+    100% {
+		opacity: 0;
+		transform: translate(40px,0) rotate(0deg);
+	}
+}
+
+@media (max-width: 700px) {
+    .this-or-that-container {   
+        flex-direction: column;
+    }
+    #headerLogo {
+		width: 70%;
+		margin-top: 30px;
+	}
+}
