@@ -1,15 +1,17 @@
 
-<div class="this-or-that-container">
-    <img class="grow" ng-click="$ctrl.setOptions($ctrl.options[0].tag)" ng-src="{{$ctrl.options[0].img}}"/>
+<!-- <div class="this-or-that-container"> -->
+    
 
     <div class="welcome-container">
-        <div class="inner-container">
-            <h2 class='welcome-header'>This or that?</h2>
-            <h4 id="option-question">{This Type} or {That Type}?</h4>
-            <button id="this-that-back-button" ng-click="$ctrl.back(option.tag)">GO BACK</button>
-        </div>
+        <img class="grow" ng-click="$ctrl.setOptions($ctrl.options[0].tag)" ng-src="{{$ctrl.options[0].img}}"/>
+            <div class="inner-container">
+                <h2 class='welcome-header'>This or that?</h2>
+                <h4 id="option-question">{This Type} or {That Type}?</h4>
+                <button id="this-that-back-button" ng-click="$ctrl.back(option.tag)">GO BACK</button>
+            </div>
+        <img class="grow" ng-click="$ctrl.setOptions($ctrl.options[1].tag)" ng-src="{{$ctrl.options[1].img}}"/>
     </div>
 
-    <img class="grow" ng-click="$ctrl.setOptions($ctrl.options[1].tag)" ng-src="{{$ctrl.options[1].img}}"/>
+   
 
 </div>
