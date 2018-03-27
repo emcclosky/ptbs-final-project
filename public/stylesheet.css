@@ -5,6 +5,7 @@ body {
 p {
     color: white;
     font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
 }
 
 ul {
@@ -17,6 +18,16 @@ h4 {
     color: white;
     font-family: 'Open Sans', sans-serif;
     font-weight: 700;
+    font-size: 25px;
+    margin: 14px 0px 10px 0px;
+}
+
+h5 {
+    color: white;
+    font-family:'Open Sans', sans-serif;
+    font-weight: 600;
+    font-size: 18px;
+    margin: 10px 0px 8px 0px;
 }
 
 #headerLogo {
@@ -82,10 +93,12 @@ h4 {
     border-radius: 3px;
     background: #2470A1;
     margin: 10px;
+    border: none;
 }
 
 .enter-button:hover {
   background: #195277;
+  cursor: pointer;
 }
 
 #airport-input {
@@ -101,10 +114,12 @@ h4 {
     border-radius: 3px;
     background: #2470A1;
     margin: 10px;
+    border: none;
 }
 
 #this-that-back-button:hover {
   background: #195277;
+  cursor: pointer;
 }
 
 #option-question {
@@ -148,21 +163,24 @@ h4 {
 .activity-text {
     color: white;
     font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
 }
 
 .airfare-backbtn {
-    background-color: #2470A1;
     color: white;
+    height: 22px;
+    width: 238px;
+    border-radius: 3px;
+    background: #2470A1;
+    margin: 20px 10px 25px 10px;
     border: none;
-    border-radius: 4px;
-    margin: 20px 0px 0px 20px;
-    height: 25px;
-    /* width: ; */
+    text-transform: uppercase;
     font-size: 14px;
 }
 
 .airfare-backbtn:hover {
-    text-decoration: underline;
+    background: #195277;
+    cursor: pointer;
 }
 
 .backbtn-link{
@@ -170,22 +188,34 @@ h4 {
     color: white;
 }
 
-.airfare-links {
+.airfare-linkbtn {
     text-decoration: none;
     font-family: 'Open Sans', sans-serif;
-    margin-bottom: 15px;
-    padding-bottom: 15px;
+    margin-bottom: 30px;
     font-weight: 600;
     background-color: #ef7300;
     color: white;
     border: none;
     border-radius: 4px;
     text-align: center;
+    padding: 10px 10px 10px 10px;
+    font-size: 14px;
+    text-transform: uppercase;
 
 }
 
-.airfare-links:hover{
-    text-decoration: underline;
+/* .result-container {
+    border-top: 1px solid #e5e5e5;
+} */
+
+.airfare-linkbtn:hover{
+    background-color: #c45e00;
+    cursor: pointer;
+}
+
+.airfare-link {
+    color: white;
+    text-decoration: none;
 }
 
 /* Loader Stuffs */
