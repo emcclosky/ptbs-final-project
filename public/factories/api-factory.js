@@ -5,27 +5,13 @@
 
         function apiCall(){
           var userAirport = DataFactory.getUserAirport();
-          var destinations = angular.copy(DataFactory.getUserResults()).slice(0, 3);
-
-          var promises = [];
-          for (var i = 0; i < destinations.length; i++){
-            var destination = destinations[i].airport;
-            promises.push($http.get(`api/prices/month-matrix?currency=usd&show_to_affiliates=false&origin=${userAirport}&destination=${destination}&month=2018-04-21`))
-          }
-
-          return Promise.all(promises).then(function(result){
+          var destinations = DataFactory.getUserResults().slice(0, 3);
+          var destinationNames = destinations.map(dest => dest.airport);
+          return $http.get(`api/prices?origin=${userAirport}&destinations=${destinationNames.join(',')}`).then(function(result){
             for (var i = 0; i < destinations.length; i++) {
               var destination = destinations[i];
-              var price;
-              if (result[i].data) {
-                var prices = result[i].data.map(function(data){
-                  return data.value;
-                });
-                price = Math.min(...prices);
-              } else {
-                price = undefined;
-              }
-              Object.assign(destination, { price })
+              var { price, url } = result.data[i].destination;
+              Object.assign(destination, { price, url });
             }
             return destinations;
           });

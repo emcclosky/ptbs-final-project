@@ -13,5 +13,9 @@
   
         };
 
+      vm.onChange = function (value) {
+        vm.newAirport = value;
+      }
+
     });
   })();

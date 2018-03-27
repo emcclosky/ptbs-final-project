@@ -4,10 +4,10 @@
          <div class="welcome-container">
              <div class="inner-container">
                  <h2 class='welcome-header'>This or that?</h2>
-                 <h4 id="option-question">{This Type} or {That Type}?</h4>
+                 <h4 id="option-question">{{$ctrl.options[0].tag}} or {{$ctrl.options[1].tag}}?</h4>
                  <button id="this-that-back-button" ng-click="$ctrl.back(option.tag)">GO BACK</button>
              </div>
          </div>
     <!-- -    <img  ng-click="$ctrl.setOptions($ctrl.options[1].tag)" ng-src="{{$ctrl.options[1].img}}"/> -->
-    +    <img class="grow" ng-click="$ctrl.setOptions($ctrl.options[1].tag)" ng-src="{{$ctrl.options[1].img}}"/>
+        <img class="grow" ng-click="$ctrl.setOptions($ctrl.options[1].tag)" ng-src="{{$ctrl.options[1].img}}"/>
 </div> 

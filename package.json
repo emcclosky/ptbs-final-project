@@ -5,6 +5,7 @@
   "main": "routes.js",
   "dependencies": {
     "express": "^4.16.3",
+    "flights": "file:flights",
     "request": "^2.85.0"
   },
   "devDependencies": {},

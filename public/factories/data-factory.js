@@ -13,14 +13,14 @@
 
 
         var cities = [
-                {name: 'Bangkok', airport: 'BKK', tag: ['beach', 'crowded', 'adventure', 'party'], id: 1, img: 'http://static.asiawebdirect.com/m/bangkok/portals/bangkok-com/shared/teasersL/TOURS/discover-bangkok-in-2-days/teaserMultiLarge/imageHilight/bangkok-day-trip.jpg'},
-                {name: 'Reykjavik', airport: 'RKV', tag: ['city', 'isolation', 'adventure', 'sleep'], id: 2, img: 'http://www.whatson.is/wp-content/uploads/2015/12/january-in-reykjavik-iceland.jpg'},
-                {name: 'Milan', airport: 'MIL', tag: ['city', 'crowded', 'lazy', 'sleep'], id: 3, img: 'https://media-cdn.tripadvisor.com/media/photo-s/06/9f/d0/38/the-duomo-s-structure.jpg'},
-                {name: 'New York City', airport: 'JFK', tag: ['city', 'crowded', 'adventure', 'party'], id: 4, img: 'https://travel.usnews.com/static-travel/images/destinations/44/chrysler_bldg_gety_marian_kilinski.jpg'},
-                {name: 'Havana', airport: 'HAV', tag: ['beach', 'crowded', 'lazy', 'sleep'], id: 5, img: 'https://www.mustdotravels.com/wp-content/uploads/2017/04/Havana.jpg'},
-                {name: 'Dublin', airport: 'DUB', tag: ['city', 'isolation', 'lazy', 'sleep'], id: 6, img: 'http://vacations.aircanada.com/media/images/common/csstorage/dest_slider/Ireland_02.jpg'},
-                {name: 'Mumbai', airport: 'BOM', tag: ['city', 'crowded', 'adventure', 'sleep'], id: 7, img: 'https://lonelyplanetimages.imgix.net/a/g/hi/t/7485b46b2aa78a9c4e8384f3f40dca15-mumbai-bombay.jpg?sharp=10&vib=20&w=1200'},
-                {name: 'Cancun', airport: 'CUN', tag: ['beach', 'isolation', 'lazy', 'party'], id: 8, img: 'https://upload.wikimedia.org/wikipedia/commons/thumb/5/54/Imagebysafa2.jpg/540px-Imagebysafa2.jpg'}
+                {name: 'Bangkok', airport: 'BKK', tag: ['beach', 'crowded', 'adventure', 'party'], id: 1, activities:[], img: 'http://static.asiawebdirect.com/m/bangkok/portals/bangkok-com/shared/teasersL/TOURS/discover-bangkok-in-2-days/teaserMultiLarge/imageHilight/bangkok-day-trip.jpg'},
+                {name: 'Reykjavik', airport: 'REK', tag: ['city', 'isolation', 'adventure', 'sleep'], id: 2, activities:['Bask Blue Lagoon', 'Viking Horse-Riding Tour', 'Be enchanted by Northern Lights'], img: 'http://www.whatson.is/wp-content/uploads/2015/12/january-in-reykjavik-iceland.jpg'},
+                {name: 'Milan', airport: 'MIL', tag: ['city', 'crowded', 'lazy', 'sleep'], id: 3, activities:['Take in the ornate Milan Cathedral', 'Shop at the Galleria Vittorio Emanuele II', 'Tour the medieval castle Sforzesco' ], img: 'https://media-cdn.tripadvisor.com/media/photo-s/06/9f/d0/38/the-duomo-s-structure.jpg'},
+                {name: 'New York City', airport: 'JFK', tag: ['city', 'crowded', 'adventure', 'party'], id: 4, activities:['Statue of Liberty and Ellis Island', 'Visit 9/11 Memorial', 'Go on the TCM Classic Film Tour of New York', 'Enjoy a show on Broadway', 'Take in the city from the Rockefeller Center Observation Deck'], img: 'https://travel.usnews.com/static-travel/images/destinations/44/chrysler_bldg_gety_marian_kilinski.jpg'},
+                {name: 'Havana', airport: 'EYW', tag: ['beach', 'crowded', 'lazy', 'sleep'], id: 5, activities:['Enjoy salsa dancing', 'Smoke a cuban cigars', 'Ride in a vintage convertible', 'Visit Ernest Hemingway\'s house'], img: 'https://www.mustdotravels.com/wp-content/uploads/2017/04/Havana.jpg'},
+                {name: 'Dublin', airport: 'DUB', tag: ['city', 'isolation', 'lazy', 'sleep'], id: 6, activities:['Visit Blarney Castle', 'Take the Cliffs of Moher Tour', 'See the Guinness Storehouse', 'Irish Whiskey Museum Experience'], img: 'http://vacations.aircanada.com/media/images/common/csstorage/dest_slider/Ireland_02.jpg'},
+                {name: 'Mumbai', airport: 'BOM', tag: ['city', 'crowded', 'adventure', 'sleep'], id: 7, activities:['Take the Mumbai Cave Tour', 'Visit the Global Vipassana Pagoda', 'Go Leisure Sailing', 'See the Entrance to India'], img: 'https://lonelyplanetimages.imgix.net/a/g/hi/t/7485b46b2aa78a9c4e8384f3f40dca15-mumbai-bombay.jpg?sharp=10&vib=20&w=1200'},
+                {name: 'Cancun', airport: 'CUN', tag: ['beach', 'isolation', 'lazy', 'party'], id: 8, activities:['Explore the Tulum Ruins', 'Go Reef and Shipwreck Snorkeling', 'Tour Chichen Itza and Cenote'], img: 'https://upload.wikimedia.org/wikipedia/commons/thumb/5/54/Imagebysafa2.jpg/540px-Imagebysafa2.jpg'}
                 ];
 
         var lists = [
