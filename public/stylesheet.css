@@ -173,6 +173,15 @@ h5 {
 	transform: scale(1.1); 
 }
 
+/* Start of airfare view */
+
+
+.result-images {
+    height: auto;
+    max-width: 700px;
+    margin: auto;
+}
+
 .activity-text {
     color: white;
     font-family: 'Open Sans', sans-serif;
@@ -206,12 +215,16 @@ h5 {
     font-family: 'Open Sans', sans-serif;
     font-weight: 600;
     font-size: 16px;
+    margin: 4px 0px 4px 0px;
 }
 
 .airfare-linkbtn {
     text-decoration: none;
     font-family: 'Open Sans', sans-serif;
-    margin: 20px 0px 30px 0px;
+    /* margin: 20px 0px 30px 0px; */
+    margin: auto;
+    margin-bottom: 30px;
+    margin-top: 20px;
     font-weight: 600;
     background-color: #ef7300;
     color: white;
@@ -221,12 +234,20 @@ h5 {
     padding: 10px 10px 10px 10px;
     font-size: 14px;
     text-transform: uppercase;
+    width: 200px;
 
 }
 
-/* .result-container {
-    border-top: 1px solid #e5e5e5;
-} */
+.result-container {
+    /* border-top: 1px solid #e5e5e5; */
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin: auto;
+    width: 90%;
+    overflow: hidden;
+
+}
 
 .airfare-linkbtn:hover{
     background-color: #c45e00;
@@ -339,4 +360,9 @@ h5 {
     .grow {
         margin: 15px 0 15px 0px;
     }
+    .result-images {
+        height: auto;
+        max-width: 360px;
+    }
+
 }
