@@ -11,10 +11,10 @@
 <div ng-if="!$ctrl.showLoader" ng-repeat="selection in $ctrl.finalSelections" class="result-container">
   <img ng-src="{{selection.img}}" />
   <h4>{{selection.name}}</h4>
+  <p class="price">Price: {{selection.price}}</p>
   <h5>Things to Do</h5>
   <div ng-repeat="activity in selection.activities" class="activity-text">
    {{activity}}
   </div>  
-  <p>Price: {{selection.price}}</p>
   <button class="airfare-linkbtn"><a href="{{selection.url}}" target="_blank" class="airfare-link">Book here</a></button>
 </div>

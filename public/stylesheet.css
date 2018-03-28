@@ -34,6 +34,7 @@ h5 {
     max-width: 350px;
 /* -	min-width: 300px; */
     margin-top: 80px;
+    cursor: pointer;
 }
 
 .center {
@@ -64,17 +65,27 @@ h5 {
 }
 
 .welcome-header {
-     text-align: center;
-    font-family: "Futura", "Arial Bold", Gadget, sans-serif;
-    font-size: 21px;
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+    text-transform: uppercase;
+    font-size: 16px;
     font-style: normal;
     font-variant: normal;
-    font-weight: 900;
+    font-weight: 700;
     line-height: 31px;
     font-kerning: auto;
     color: #2470A1;
     margin-top: 21px;
     margin-bottom: 0;
+}
+
+.form-container {
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.inputs {
+    width: 234px;
 }
 
 .background {
@@ -92,7 +103,7 @@ h5 {
     width: 238px;
     border-radius: 3px;
     background: #2470A1;
-    margin: 10px;
+    margin-top: 10px;
     border: none;
 }
 
@@ -124,16 +135,16 @@ h5 {
 
 #option-question {
     text-align: center;
-    font-family: "Futura", "Arial Bold", Gadget, sans-serif;
-    font-size: 14px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 21px;
     font-style: normal;
     font-variant: normal;
-    font-weight: 900;
+    font-weight: 400;
     line-height: 31px;
     font-kerning: auto;
-    color: black;
-    margin-top: 10px;
-    margin-bottom: 0;
+    color: rgb(66, 70, 73);
+    margin-top: 5px;
+    margin-bottom: 5px;
 }
 
 .this-or-that-container {
@@ -141,6 +152,7 @@ h5 {
     align-items: center;
     justify-content: space-around;
     margin-top: 50px;
+    margin: auto;
 }
 
 .this-or-that-container .welcome-container {
@@ -188,10 +200,17 @@ h5 {
     color: white;
 }
 
+.price {
+    color: white;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+}
+
 .airfare-linkbtn {
     text-decoration: none;
     font-family: 'Open Sans', sans-serif;
-    margin-bottom: 30px;
+    margin: 20px 0px 30px 0px;
     font-weight: 600;
     background-color: #ef7300;
     color: white;

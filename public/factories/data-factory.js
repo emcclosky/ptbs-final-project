@@ -24,10 +24,10 @@
                 ];
 
         var lists = [
-                [{tag: 'City', img: 'https://freepresets.com/wp-content/uploads/2016/03/Free-Lightroom-Preset-Vintage-City-After.jpg'}, {tag: 'Beach', img: 'https://static.pexels.com/photos/221471/pexels-photo-221471.jpeg'}],
-                [{tag: 'Isolation', img: 'http://blog.rismedia.com/wp-content/uploads/2015/10/HorsesForHighways.jpg'},{tag: 'Crowded', img: 'https://s3-us-west-1.amazonaws.com/eslinsider-images/images/crowdedshibuyacrossing.png'}],
-                [{tag: 'Lazy', img: 'http://www.guidetocaribbean.net/wp-content/uploads/2017/05/beachdrinks7-600x337.jpg'},{tag: 'Adventure', img: 'https://upload.wikimedia.org/wikipedia/en/e/eb/Spaceball_jump_over_Skydive_35.jpg'}],
-                [{tag: 'Party', img: 'http://themocracy.com/wp-content/uploads/2016/12/Parties.jpg'},{tag: 'Sleep', img: 'http://dwgyu36up6iuz.cloudfront.net/heru80fdn/image/upload/c_fill,d_placeholder_self.png,fl_progressive,g_face,h_450,q_80,w_800/v1489376598/self_8-easy-tricks-to-get-better-sleep.jpg'}]];
+                [{tag: 'City', img: 'http://i68.tinypic.com/208e6pd.jpg'}, {tag: 'Beach', img: 'http://i68.tinypic.com/21kcz6a.jpg'}],
+                [{tag: 'Isolation', img: 'http://i68.tinypic.com/2zxmipe.jpg'},{tag: 'Crowded', img: 'http://i63.tinypic.com/2wgd4lh.jpg'}],
+                [{tag: 'Lazy', img: 'http://i64.tinypic.com/2v2f5sx.jpg'},{tag: 'Adventure', img: 'http://i63.tinypic.com/259ltmp.jpg'}],
+                [{tag: 'Party', img: 'http://i64.tinypic.com/vhw5mg.jpg'},{tag: 'Sleep', img: 'http://i67.tinypic.com/15f50x.jpg'}]];
 
 
         function getUserResults(){
