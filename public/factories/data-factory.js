@@ -35,7 +35,6 @@
           cities.forEach(function(city) {
             var match = intersection(city.tag, userChoices).length;
             finalSelections.push(Object.assign(city, { match }));
-            console.log('maybe work', finalSelections);
           });
 
           return finalSelections.sort(function(a, b) {
